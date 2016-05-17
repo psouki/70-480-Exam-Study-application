@@ -1,0 +1,542 @@
+﻿body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana;
+}
+
+@font-face {
+    font-family: 'Draft Beer';
+    src: url('../fonts/Draft Beer.otf') format('opentype');
+}
+
+header {
+    font-weight: bold;
+}
+
+.headerLogo {
+    display: inline-block;
+    margin-right: 71px;
+}
+
+
+#mainHeader {
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left:auto;
+    background-color: white;
+    z-index: 13;
+}
+
+#mainHeader > div {
+    margin-top: 25px;
+}
+
+.searchBox {
+    float: right;
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+}
+
+#headerName {
+    font-family: 'Draft Beer';
+    font-size: 60px;
+    color: #603813;
+    text-shadow: 2px 2px 5px #bd5f00;
+}
+
+nav ul {
+    background: linear-gradient(to right, #bd5f00, #603813);
+    height: 31px;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.navLink {
+    height: 35px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+#shoppingCart {
+    float: right;
+    padding-right: 21px;
+}
+#shoppingCart ul {
+    list-style-type: none;
+}
+#shoppingCart li {
+    font-size: 13px;
+    font-family: Verdana;
+    -ms-user-select: none;
+}
+#mainContent {
+    margin-top: 130px;
+}
+#welcomeImage {
+    display: inline-block;
+    width: 700px;
+}
+
+#beerOfTheMonth {
+    float: right;
+    width: 300px;
+    padding-top: 131px;
+
+}
+
+#beerOfTheMonth >img  {
+    padding-left: 21px
+}
+footer {
+    clear: both;
+    width: 100%;
+    background-color: wheat;
+    margin: 20px 0px 20px;
+    padding: 5px;
+    transform: skew(-10deg);
+    z-index: 0;
+}
+
+.smallText {
+    font-size: 10px;
+}
+
+.blockHeader, .blockHeaderBeer {
+    font-size: 30px;
+    font-family: 'Draft Beer';
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*home page*/
+
+#welcomeText {
+    float: left;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#welcomeText > header {
+    color: #603813;
+    font-size: 31px;
+    font-weight: bold;
+    margin-bottom: 9px
+}
+
+#welcomeText div {
+    font-size: 17px;
+    column-count: 2;
+    column-gap: 41px;
+}
+
+#events {
+    float: right;
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#events > header {
+    margin-left: 10px;
+    color: #603813;
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+#events > ul {
+    list-style: none;
+}
+
+#events > ul > li {
+    margin-bottom: 3px;
+}
+
+#bestsellers {
+    height: 100%;
+    width: 700px;
+    margin-bottom: 20px
+}
+
+#bestsellers > header {
+    font-size: 27px;
+    font-weight: normal;
+    color: #603813;
+}
+#bestsellers article {
+    display: inline-block;
+}
+
+#bestsellers .productArticleName {
+    color: #B8860B;
+    cursor: pointer;
+}
+
+#bestsellers .productArticlePrice {
+    color: green;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.backgroundGradient {
+    color: white;
+    background: linear-gradient(to right,  #bd5f00, #603813);
+    margin-bottom: 20px;
+}
+
+.addCartButton {
+    cursor: pointer;
+    padding: 4px 25px;
+    background: #603813;
+    border: 1px solid #381f09;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,.75);
+    color: #F3F3F3;
+    font-size: 0.8em;
+    width: 80px;
+    margin-bottom: 15px;
+    -ms-user-select: none;
+}
+
+/*all beers page*/
+.allBeers {
+    width: 700px;
+}
+.productArticleWide {
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 3fr;
+}
+
+.productArticleWide header {
+    cursor: pointer;
+}
+
+.productArticleWideThumbnail {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.productArticleWideThumbnail {
+    height: 171px;
+    width: 142px;
+}
+.productArticleWideContent {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.productArticleWideContent header {
+    color: #603813;
+    font-weight: bold;
+}
+
+.productArticleWidePrice {
+    font-weight: bold;
+    color: green;
+}
+
+/*gift page*/
+#beerGift article header {
+    margin-top: 31px;
+     width: 300px;
+    height: 31px;
+    color: goldenrod;
+    text-shadow: 1px 1px 3px gold;
+    font-size: 21px;
+}
+#beerGift #gift {
+    margin-top: 31px;
+    border-radius: 21px;
+    cursor: pointer;
+    border: 2px solid goldenrod;
+    box-shadow: 3px 3px 1px gold;
+    width: 200px;
+    height: 31px;
+    background-color: #E5B225;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#beerGift #gift:active {
+    margin-top: 36px;
+    margin-left: 5px;
+    box-shadow: 5px 5px 7px #FFDF15;
+}
+
+#beerGift #gift:hover {
+    text-shadow: 1px 1px #FFDF15;
+    box-shadow: 5px 5px 7px #FFDF15;
+}
+#beerGift #giftItem ul {
+    list-style-type: none;
+    padding-top: -10px;
+    padding-bottom: 20px;
+}
+
+#beerGift #giftItem li {
+    padding: 10px;
+}
+#beerGift #giftItem li span:first-child {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: goldenrod;
+}
+/*ranking page*/
+.ranking ul {
+    list-style-type: none;
+    width: 200px;
+    position: relative;
+    top: 11px;
+    left: 200px;
+    margin-bottom: 31px;
+}
+
+.ranking li {
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 8px;
+    background-color: #FDCF50;
+    margin-top: 9px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*find us page*/
+#googleMap {
+    width:700px;
+    height:500px;
+}
+
+/*Gallery page*/
+
+#beerGallery article header {
+    margin-top: 31px;
+     width: 300px;
+    height: 31px;
+    color: goldenrod;
+    text-shadow: 1px 1px 3px gold;
+    font-size: 21px;
+}
+
+#slideshow {
+          position: relative;
+          width: 600px;
+}
+#beerGallery .controls {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    cursor: pointer;
+    transition: all 1s ease;
+    -ms-user-select: none;
+}
+#beerGallery .controls:hover {
+    background-color: #616161;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#beerGallery div span:first-of-type {
+    left: 5px;
+}
+#beerGallery div span:nth-of-type(2) {
+    right: 5px;
+}
+#beerGallery #slideshow div:first-child div:first-of-type {
+    position: absolute;
+    bottom: 4.5%;
+    left: 0;
+    width: 568px;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    color: darkgray;
+    padding: 0.01em 16px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Verdana,sans-serif;
+    opacity: 0.5;
+}
+
+#slideshowButton {
+    position: relative;
+    bottom: 5px;
+    left: 0;
+    border-radius: 8px;
+    border: 1px solid gold;
+    width: 100px;
+    text-align: center;
+    box-shadow: 1px 1px 2px goldenrod;
+    background-color: #FCD66E;
+    color: #B8860B;
+    text-shadow: 1px 1px gold;
+    -ms-user-select: none;
+}
+#slideshowButton:active {
+    bottom: 0;
+    left: 5px;
+    background-color: gold;
+    box-shadow: 1px 1px 5px goldenrod;
+}
+
+#slideshowButton:hover {
+     box-shadow: 1px 1px 5px goldenrod;
+}
+/*check output page*/
+.notVisible {
+    visibility: hidden;
+}
+
+#confirmation {
+    color: #72560B;
+    margin: 31px;
+    margin-bottom: 100px;
+}
+
+.sendData {
+    font-size: 31px;
+}
+
+.offLine {
+    font-size: 17px;
+}
+
+#confirmation ul:first-of-type {
+    font-size: 17px;
+    list-style-type: none;
+}
+
+#confirmation li:last-child {
+    padding-top: 10px;
+}
+.textLabel, .textLongLabel{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    padding-top: .1em;
+    padding-right: .25em;
+    width: 6em;
+    text-align: left;
+    display: inline-block;
+}
+
+.textLabel {
+    width: 9em;
+}
+
+.textLongLabel {
+    width: 13em;
+}
+
+.textinput input,
+.textinput textarea {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 100%;
+    size: 500px;
+}
+
+input:active,
+input:focus,
+input:hover,
+textarea:active,
+textarea:focus,
+textarea:hover {
+    background-color: lightyellow;
+    border-color: yellow;
+}
+
+/*beer details page*/
+.beerDetails article{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.beerDetails article > div:first-child {
+    flex: 0 0 67%;
+}
+.beerDetails article div.info {
+    flex: 1;
+    height: 475px;
+}
+
+.flipContainer {
+    position: relative;
+    margin: 41px auto;
+    width: 150px;
+    height: 45px;
+}
+.anim {
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease-in-out;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    padding-top: 27px;
+}
+
+.front {
+    z-index: 2;
+    background-color: goldenrod;
+    box-shadow: 3px 3px 13px gold;
+}
+
+.back {
+    z-index: 1;
+    background-color: gold;
+    transform: rotateY(-180deg);
+    box-shadow: 3px 3px 13px goldenrod;
+}
+
+.flipContainer:hover .front {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.flipContainer:hover .back {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.beerDetails article div.info div:nth-child(2) .back{
+    font-size: 14px;
+    padding-top: 17px;
+}
+
+
+.beerDetails div:last-of-type {
+    text-align: center;
+}
+
+#playControls div {
+    margin: 5px;
+    font-size: 13pt;
+    display: inline-block;
+    background-color: goldenrod;
+    border: solid goldenrod;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.90);
+}
+
+#salesChart {
+    text-align: center;
+    padding: 31px;
+}
+#salesChartBar {
+    border:1px solid #d3d3d3;
+}
+

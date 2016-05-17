@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "FindUs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="~/Scripts/own/geoPosition.js"></script>
+
+<section class="FindUs">
+    <header class="blockHeader">
+        <span>Come to our real-life store!</span>
+    </header>
+
+    <div id="googleMap"></div>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', createDrivingDirections, false);
+</script>

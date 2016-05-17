@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Details";
+}
+<script src="~/Scripts/own/videoPlayer.js"></script>
+<script src="~/Scripts/own/canvasChart.js"></script>
+<script src="~/Scripts/own/beerDetail.js"></script>
+
+<section class="beerDetails">
+    <header class="blockHeaderBeer">
+        <span></span>
+    </header>
+    <article>
+        <div>
+            <figure>
+                <img class="productArticleLargeImage" />
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div class="info">
+            Hover to Discover:
+            <div class="flipContainer">
+                <div class="front anim">Nationality</div>
+                <div class="back anim"></div>
+            </div>
+            <div class="flipContainer">
+                <div class="front anim">Category</div>
+                <div class="back anim"></div>
+            </div>
+            <div class="flipContainer">
+                <div class="front anim">Alchool</div>
+                <div class="back anim"></div>
+            </div>
+        </div>
+     </article>
+    <div class="productArticleContent">
+        <p class="productArticleDescription"></p>
+        <p class="productArticlePrice"></p>
+    </div>
+    <div>
+        <video width="320" height="240" class="beerPlayer" id="videoPlayer" poster="~/Images/pilsnerUrquellVideo.jpg">
+            <source src="~/Media/PilsnerUrquell.mp4" type="video/mp4"/>
+        </video>
+        <div id="playControls">
+            <div id="slower">-</div>
+            <div id="rew">⏪</div>
+            <div id="stop"> &squf; </div>
+            <div id="play">&#x25BA;</div>
+            <div id="fwd">⏩</div>
+            <div id="faster">+</div>
+            <div id="mute">&#128263</div>
+        </div>
+    </div>
+    
+</section>
+<div id="salesChart">
+    <canvas id="salesChartBar" height="500" width="700">
+        Sorry your browser do not support canvas.
+    </canvas>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', playerControls, false);
+    document.addEventListener('DOMContentLoaded', drawChart, false);
+    document.addEventListener('DOMContentLoaded', loadPage, false);
+</script>

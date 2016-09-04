@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - devBeer Shop</title>
+    <link href="~/Content/Site.css" rel="stylesheet"/>
+    <script src="~/Scripts/own/useful.js"></script>
+</head>
+<body>
+<header id="mainHeader">
+    <div>
+        <a class="headerLogo" href="/Views/Home/">
+            <img src="~/Images/logoSmall.png"/>
+        </a>
+        <span id="headerName">devBeer Shop</span>
+        <input type="search" class="searchBox" placeholder="Search our shop"/>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a class="navLink" href="~/Home">Home</a>
+                <a class="navLink" href="~/Home/AllBeers">Our Beers</a>
+                <a class="navLink" href="~/Home/Gift">Gifts</a>
+                <a class="navLink" href="~/Home/Ranking">Ranking</a>
+                <a class="navLink" href="~/Home/FindUs">Find us</a>
+                <a class="navLink" href="~/Home/Gallery">Gallery</a>
+                <a class="navLink" href="~/Home/CheckOut">Checkout</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div id="mainContent">
+    <div id="welcomeImage">
+        <img src="~/Images/beer-header.jpg"/>
+    </div>
+    <div id="beerOfTheMonth">
+        <img src="~/Images/beerMonth.png"/>
+    </div>
+    <div id="shoppingCart">
+        <header class="blockHeader">
+            <span>Shopping Cart</span>
+            <ul></ul>
+        </header>
+    </div>
+    @RenderBody()
+    <footer>
+        <p class="textContent">Address: <address>13, Main Street, 90120 San Andreas</address>
+        </p>
+        <p class="smallText">This page was generated on <time>10:21:03.123</time>
+        </p>
+        <div class="smallText">Beer Draft Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> is licensed by CC BY 3.0
+        </div>
+        <p>&copy; @DateTime.Now.Year - devBeer</p>
+    </footer>
+</div>
+    <script src="~/Scripts/own/shoppingCart.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', ShoppingCart.display, false);
+</script>
+
+</body>
+</html>

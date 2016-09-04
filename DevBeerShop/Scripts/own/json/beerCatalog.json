@@ -1,0 +1,62 @@
+﻿[
+  {
+    "name": "Pilsener Urquell",
+    "nationality": "Czech",
+    "kind": "Pilsen - Bohemian Pilsner",
+    "alchool": 4.4,
+    "beerId": "PUR",
+    "picture": "pilsener_urquell.jpg",
+    "price": 10.00,
+    "description": "While most lagers give away most of their taste profile in the front of the mouth, Pilsner Urquell only hints at its flavour there. Instead, it develops you in the middle, followed by a refreshing, clean finish and balanced aftertaste, practically inviting you to have another. Pilsner Urquell was the world’s first-ever blond lager, making it the inspiration for more than two-thirds of the beer produced in the world today (which are still called pils, pilsner and pilsener). It is hopped with Saaz hops, a noble hop variety which is a key element in its flavour profile, as is the use of soft water and fire-brewing. It is available in 330 ml, 355ml and 500ml aluminium cans and green bottles."
+  },
+  {
+    "name": "Stella Artois",
+    "nationality": "Belguim",
+    "kind": "Lager - Belguim Lager",
+    "alchool": 5.2,
+    "beerId": "SAR",
+    "picture": "stella.png",
+    "price": 3.49,
+    "description": "By 1366 roots of our brewing tradition had been established in the city of Leuven, Belgium– which is also where the original Den Hoorn brewery was founded. Den Hoorn laid the foundation for the quality taste and standard Stella Artois is known for. The symbol of the Den Hoorn Brewery is proudly displayed in Stella Artois' cartouche to this day. Sebastian Artois was admitted to the Leuven Brewer’s Guild as a Brew Master in 1708, and only nine years later purchased the Den Hoorn brewery. In memoriam, you can find his last name on the brewery and every bottle of Stella Artois around the world."
+  },
+  {
+    "name": "Corona Extra",
+    "nationality": "Mexican",
+    "kind": "Premium American Lager",
+    "alchool": 4.6,
+    "beerId": "COE",
+    "picture": "corona.jpg",
+    "price": 6.00,
+    "description": "Corona delivers a unique fun, sun and positive, carefree state of mind. It is a brand that doesn't take itself too seriously or try too hard to impress. It is defined by a laid back image originally created by Corona consumers when it first became available in the U.S. and which remains the Brand's foundation today."
+  },
+  {
+    "name": "Austria Pilsen",
+    "nationality": "Brazilian",
+    "kind": "Premium American Lager",
+    "alchool": 4.5,
+    "beerId": "API",
+    "picture": "austria.jpg",
+    "price": 7.00,
+    "description": "Beer type Pilsen American Lager light, creamy, with malt flavor and low bitterness. Alcohol content below 4.8% . Harmonization - combines with grilled fish, sushi , salads , sausages and seafood."
+  },
+  {
+    "name": "Paulistania",
+    "nationality": "Brazilian",
+    "kind": "Premium American Lager",
+    "alchool": 4.8,
+    "beerId": "SPB",
+    "picture": "paulistania.jpg",
+    "price": 9.00,
+    "description": "The new national malt beer , created by Bier & Wein Importadora - a pioneer in specialty beers in Brazil. Made with noble raw materials, it is an aromatic beer, full-bodied , with balanced bitterness and rich malt notes."
+  },
+  {
+    "name": "Hofbräu Original",
+    "nationality": "German",
+    "kind": "Pilsen - Munich Helles",
+    "alchool": 5.1,
+    "beerId": "HFB",
+    "picture": "hb.jpg",
+    "price": 9.71,
+    "description": "More than any other, Hofbräu Original embodies Munich’s character as a city of beer, spreading its fame throughout the world. Full-bodied with an alcoholic content of approximately 5.1% by volume, and offering a truly fine hops aroma, it is a superbly well-balanced lager."
+  }
+]

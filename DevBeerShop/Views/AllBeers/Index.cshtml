@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "All Beers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="allBeers">
+    <header class="blockHeader">
+        <span data-url="@Url.Content("~/Scripts/own/")">Pilsen Beer</span>
+    </header>
+
+</section>
+<script src="~/Scripts/own/allBeers.js"></script>
+<script src="~/Scripts/own/dragAndDrop.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', loadPage, false);
+</script>
+
+

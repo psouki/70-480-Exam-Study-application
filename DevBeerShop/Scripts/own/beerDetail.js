@@ -6,22 +6,7 @@ detailNS.DetailPage = function () {
     this.beerFound = false;
 }
 detailNS.DetailPage.prototype = function () {
-    var findBeer = function(beers) {
-            var beerClicked = 'nda';
-            if (localStorage.getItem('beerDetails')) {
-                beerClicked = localStorage.getItem('beerDetails');
-            }
-
-            for (var item = 0; item < beers.length; item++) {
-                var beer = beers[item];
-                if (beerClicked === beer.beerId) {
-                    this.beerFound = true;
-                    return beer;
-                }
-            }
-            return this.beer;
-        },
-        build = function(beer) {
+    var build = function(beer) {
             var header = document.querySelector('.blockHeaderBeer span');
             if (beer === undefined || beer === null) {
                 header.innerHTML = 'Beer not found"';
@@ -48,10 +33,10 @@ detailNS.DetailPage.prototype = function () {
                 price.innerHTML = 'Price: $' + beer.price;
             }
         }
-    return { findBeer: findBeer, build: build };
+    return { build: build };
 }();
 
-detailNS.LoadJson = function (json, callback) {
+detailNS.LoadJson = function (json, callback, beerClicked) {
     var xhr = new XMLHttpRequest();
     xhr.open('get', json, true);
     xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
@@ -64,16 +49,20 @@ detailNS.LoadJson = function (json, callback) {
             }
         }
     }
-    xhr.send();
+    xhr.send(beerClicked);
 }
 
 var loadPage = function () {
-    var appPath = "http://localhost:35371/Scripts/own/json/beerCatalog.json";
-    var beers = new Array();
+    var beerClicked = 'nda';
+    if (localStorage.getItem('beerDetails')) {
+        beerClicked = localStorage.getItem('beerDetails');
+    }
+    var appPath = 'GetBeerDetails/' + beerClicked;
+
+    var beer;
     detailNS.LoadJson(appPath, function () {
-        beers = JSON.parse(this); // as result of the call method the THIS became the response returned.
+        beer = JSON.parse(this); // as result of the call method the THIS became the response returned.
         var page = new detailNS.DetailPage();
-        var beer = page.findBeer(beers);
         page.build(beer);
-    });
+    }, beerClicked);
 };

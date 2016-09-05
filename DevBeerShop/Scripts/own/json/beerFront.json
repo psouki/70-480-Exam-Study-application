@@ -1,50 +1,50 @@
 ﻿[
   {
-    "name": "Pilsener Urquell",
     "beerId": "PUR",
+    "description": "While most lagers give away most of their taste profile in the front of the mouth, Pilsner Urquell only hints at its flavour there. Instead, it develops you in the middle, followed by a refreshing, clean finish and balanced aftertaste, practically inviting you to have another.",
+    "front": "bestSeller",
+    "name": "Pilsener Urquell",
     "picture": "pilsener_urquellTb.jpg",
-    "price": 10.00,
-    "front": "bestSeller",
-    "description": "While most lagers give away most of their taste profile in the front of the mouth, Pilsner Urquell only hints at its flavour there. Instead, it develops you in the middle, followed by a refreshing, clean finish and balanced aftertaste, practically inviting you to have another."
+    "price": 10.00
   },
   {
-    "name": "Stella Artois",
     "beerId": "SAR",
+    "description": " The symbol of the Den Hoorn Brewery is proudly displayed in Stella Artois' cartouche to this day. Sebastian Artois was admitted to the Leuven Brewer’s Guild as a Brew Master in 1708, and only nine years later purchased the Den Hoorn brewery.",
+    "front": "bestSeller",
+    "name": "Stella Artois",
     "picture": "stellaTb.jpg",
-    "price": 3.49,
-    "front": "bestSeller",
-    "description": " The symbol of the Den Hoorn Brewery is proudly displayed in Stella Artois' cartouche to this day. Sebastian Artois was admitted to the Leuven Brewer’s Guild as a Brew Master in 1708, and only nine years later purchased the Den Hoorn brewery."
+    "price": 3.49
   },
   {
-    "name": "Corona Extra",
     "beerId": "COE",
-    "picture": "coronaTb.jpg",
-    "price": 6.00,
+    "description": "Corona delivers a unique fun, sun and positive, carefree state of mind. It is a brand that doesn't take itself too seriously or try too hard to impress. It is defined by a laid back image originally created by Corona consumers when it first became available in the U.S.",
     "front": "bestSeller",
-    "description": "Corona delivers a unique fun, sun and positive, carefree state of mind. It is a brand that doesn't take itself too seriously or try too hard to impress. It is defined by a laid back image originally created by Corona consumers when it first became available in the U.S."
+    "name": "Corona Extra",
+    "picture": "coronaTb.jpg",
+    "price": 6.00
   },
   {
-    "name": "Austria Pilsen",
     "beerId": "API",
+    "description": "Beer type Pilsen American Lager light, creamy, with malt flavor and low bitterness. Alcohol content below 4.8% . Harmonization - combines with grilled fish, sushi , salads , sausages and seafood.",
+    "front": "goodChoice",
+    "name": "Austria Pilsen",
     "picture": "austriaTb.jpg",
-    "price": 7.00,
-    "front": "goodChoice",
-    "description": "Beer type Pilsen American Lager light, creamy, with malt flavor and low bitterness. Alcohol content below 4.8% . Harmonization - combines with grilled fish, sushi , salads , sausages and seafood."
+    "price": 7.00
   },
   {
-    "name": "Paulistania",
     "beerId": "SPB",
-    "picture": "paulistaniaTb.jpg",
-    "price": 9.00,
+    "description": "The new national malt beer , created by Bier & Wein Importadora - a pioneer in specialty beers in Brazil. Made with noble raw materials, it is an aromatic beer, full-bodied , with balanced bitterness and rich malt notes.",
     "front": "goodChoice",
-    "description": "The new national malt beer , created by Bier & Wein Importadora - a pioneer in specialty beers in Brazil. Made with noble raw materials, it is an aromatic beer, full-bodied , with balanced bitterness and rich malt notes."
+    "name": "Paulistania",
+    "picture": "paulistaniaTb.jpg",
+    "price": 9.00
   },
   {
-    "name": "Hofbräu Original",
     "beerId": "HFB",
-    "picture": "hbTb.jpg",
-    "price": 9.71,
+    "description": "More than any other, Hofbräu Original embodies Munich’s character as a city of beer, spreading its fame throughout the world. Full-bodied with an alcoholic content of approximately 5.1% by volume, and offering a truly fine hops aroma, it is a superbly well-balanced lager.",
     "front": "goodChoice",
-    "description": "More than any other, Hofbräu Original embodies Munich’s character as a city of beer, spreading its fame throughout the world. Full-bodied with an alcoholic content of approximately 5.1% by volume, and offering a truly fine hops aroma, it is a superbly well-balanced lager."
+    "name": "Hofbräu Original",
+    "picture": "hbTb.jpg",
+    "price": 9.71
   }
 ]

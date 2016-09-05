@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Ranking";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Scripts/own/ranking.js"></script>
+<section class="ranking">
+    <header class="blockHeader">
+        <p> Beer Ranking</p>
+        <p>Drag and Drop to make your own ranking choices</p>
+    </header>
+    <article>
+        <ul id="rankingList"></ul>
+    </article>
+</section>
+<script>
+    document.addEventListener('DOMContentLoaded', loadRanking, false);
+</script>
+

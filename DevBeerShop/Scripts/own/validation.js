@@ -52,7 +52,7 @@
        return validationNS.verifyIsNumber(e.key);
     });
 
-    // unnecessary trip wtinin the element, was done that way just to proof I can :)
+    // unnecessary trip wtinin the element. It was done just to proof I can :)
     var zip = addressNumber.parent().siblings().eq(4).find('input');
     zip.blur(function () {
         var zipCode = $(this).val();

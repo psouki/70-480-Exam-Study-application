@@ -1,4 +1,4 @@
-﻿var appPath = "http://localhost:35371/Scripts/own/json/beerFront.json";
+﻿var appPath = 'Home/BuildPage';
 var BEERINDEX = (function (jsonFile) {
     var getBeers = function () {
         var beers;
@@ -65,14 +65,14 @@ BEERINDEX = (function (oldNS) {
 })(BEERINDEX);
 
 $(document).ready(function () {
-    var beers = BEERINDEX.getBeers();
+    var beers = JSON.parse(BEERINDEX.getBeers());
    BEERINDEX.populateHomePage(beers);
 
     $('.productArticleName').click(function (e) {
         var element = e.target;
         var beerId = element.getAttribute('data-beerId');
         localStorage.setItem('beerDetails', beerId);
-        window.location.href = "Home/BeerDetails";
+        window.location.href = "AllBeers/Details";
     });
 
     $('.addCartButton').click(function(e) {

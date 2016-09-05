@@ -58,7 +58,7 @@ function LoadJson(json, callback) {
 }
 
 var loadRanking = function () {
-    var appPath = "http://localhost:35371/Scripts/own/json/beers.json";
+    var appPath = 'ranking/loadpage';
     var beers = new Array();
     LoadJson(appPath, function (response) {
         beers = JSON.parse(response);

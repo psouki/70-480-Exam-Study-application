@@ -81,7 +81,7 @@ allBeersNS.createLinkEventHandlers = function () {
 };
 var loadPage = function () {
     var pathToScripts = document.querySelector('.allBeers span').getAttribute('data-url');
-    var appPath = pathToScripts + 'json/beerFront.json';
+    var appPath = 'allbeers/loadpage';
     var pathToWorkerScript = pathToScripts + 'allBeerWorker.js';
 
     function messageHandler(e) {

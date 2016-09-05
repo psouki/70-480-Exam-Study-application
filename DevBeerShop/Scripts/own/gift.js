@@ -29,16 +29,16 @@ $(document).ready(function () {
 
     $('#gift').click(function () {
         var profile = {
-            customerCategory: "gold",
-            buyingStyle: "same",
-            invoiceAverage: "high"
+            customerCategory: 'gold',
+            buyingStyle: 'same',
+            invoiceAverage: 'high'
         };
 
-        var pagePath = 'http://localhost:35371/Home/Gift';
+        var pagePath = 'Gift/getgift';
 
-        $.post(pagePath, JSON.stringify(profile), function(data) {
+        $.post(pagePath, profile, function(data) {
             giftNS.builGift(data);
-        }, 'json');
+        });
     });
    
 });

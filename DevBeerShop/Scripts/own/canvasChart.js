@@ -28,7 +28,7 @@ chartNS.createBar = function (context, data, startX, barWidth, width) {
     context.lineWidth = '0.0';
     var maxHeight = startY-1;
     var i = 0;
-    var xPosition, number, yPosition, fromBotton;
+    var xPosition, yPosition, fromBotton;
 
     var resultBar = function (beer) {
         xPosition = 20 + startX + (i * barWidth) + (i * 30);
@@ -46,63 +46,33 @@ chartNS.createBar = function (context, data, startX, barWidth, width) {
     };
     data.forEach(resultBar);
 }
-
-var salesChart = [
-    {
-        month: 'Jan',
-        sales: 410
-    },
-    {
-        month: 'Feb',
-        sales: 310
-    },
-    {
-        month: 'Mar',
-        sales: 210
-    },
-    {
-        month: 'Apr',
-        sales: 280
-    },
-    {
-        month: 'May',
-        sales: 320
-    },
-    {
-        month: 'Jun',
-        sales: 170
-    },
-    {
-        month: 'Jul',
-        sales: 321
-    },
-    {
-        month: 'Aug',
-        sales: 97
-    },
-    {
-        month: 'Sep',
-        sales: 184
-    },
-    {
-        month: 'Oct',
-        sales: 171
-    },
-    {
-        month: 'Nov',
-        sales: 210
-    },
-    {
-        month: 'Dec',
-        sales: 320
-    }];
+chartNS.getSales = function (jsonFile) {
+        var sales;
+        $.ajax({
+            type: 'get',
+            url: jsonFile,
+            async: false,
+            dataType: 'json',
+            contentType: 'application/json; charset=utf-8',
+        })
+        .done(function(json) {
+            sales = json;
+        })
+        .fail(function (jqxhr, textStatus, error) {
+            var err = textStatus + ", " + error;
+            console.log(err);
+            sales = [];
+        });
+        return sales;
+}
 
 var drawChart = function() {
     var canvas = document.getElementById('salesChartBar');
-
+    var appPath = 'GetSales';
+    var salesData = chartNS.getSales(appPath);
     if (canvas && canvas.getContext) {
         var context = canvas.getContext('2d');
-        chartNS.createBar(context, salesChart, 30, 20, canvas.width -50);
+        chartNS.createBar(context, salesData, 30, 20, canvas.width - 50);
     }
 };
 

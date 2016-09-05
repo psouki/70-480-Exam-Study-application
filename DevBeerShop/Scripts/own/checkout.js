@@ -1,6 +1,5 @@
 ﻿var builtConfirmationList = function () {
     var orderlist = $('#confirmation');
-    var test = document.querySelector('#confirmation');
     var list = $('<ul></ul>');
     if (localStorage.getItem('cart')) {
         var order = JSON.parse(localStorage.getItem('cart'));

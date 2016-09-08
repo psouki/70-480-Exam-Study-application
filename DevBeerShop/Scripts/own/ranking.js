@@ -62,6 +62,7 @@ var loadRanking = function () {
     var beers = new Array();
     LoadJson(appPath, function (response) {
         beers = JSON.parse(response);
+        beers = JSON.parse(beers);
 
         var rankingList = document.getElementById('rankingList');
         var fragment = document.createDocumentFragment();

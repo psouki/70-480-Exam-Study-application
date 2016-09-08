@@ -44,7 +44,7 @@ allBeersNS.Page.prototype = function() {
             return article;
         },
         populate = function (beersList) {
-            this.beers = beersList;
+            this.beers = JSON.parse(beersList);;
             var fragment = document.createDocumentFragment();
             var allBeers = document.getElementsByClassName('allBeers');
             for (var item = 0; item < this.beers.length; item++) {
@@ -75,13 +75,16 @@ allBeersNS.createLinkEventHandlers = function () {
         product.addEventListener('click', function () {
             var beerId = this.getAttribute('data-beerId');
             localStorage.setItem('beerDetails', beerId);
-            window.location.href = "BeerDetails";
+            var root = location.protocol + '//' + location.host;
+            window.location.href = root + "/AllBeers/Details";
         });
     }
 };
 var loadPage = function () {
     var pathToScripts = document.querySelector('.allBeers span').getAttribute('data-url');
-    var appPath = 'allbeers/loadpage';
+    var root = location.protocol + '//' + location.host;
+
+    var appPath = root + '/allbeers/loadpage';
     var pathToWorkerScript = pathToScripts + 'allBeerWorker.js';
 
     function messageHandler(e) {

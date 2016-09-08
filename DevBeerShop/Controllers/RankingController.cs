@@ -15,7 +15,7 @@ namespace DevBeerShop.Controllers
         public ActionResult LoadPage()
         {
             string result;
-            using (StreamReader sr = new StreamReader(HostingEnvironment.MapPath("~/Scripts/own/json/beer.json")))
+            using (StreamReader sr = new StreamReader(HostingEnvironment.MapPath("~/Scripts/own/json/beers.json")))
             {
                 result = sr.ReadToEnd();
             }

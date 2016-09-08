@@ -81,9 +81,6 @@ galleryNS.buildSlideshow = function() {
 }
 
 $(document).ready(function () {
-    var pathToScripts = document.querySelector('#beerGallery span').getAttribute('data-url');
-    //var appPath = 'http://localhost:35371' + pathToScripts + 'gallery.json';
-
     var appPath = 'gallery/loadpage';
     $.getJSON(appPath, function (data) {
         galleryNS.LoadJson(JSON.parse(data));
